@@ -5,11 +5,41 @@
   <artifactId>palava-parent</artifactId>
   <packaging>pom</packaging>
   <version>1.4-SNAPSHOT</version>
-  <name>palava-parent Multi Project</name>
-  <url>http://maven.apache.org</url>
+  <name>Palava Parent</name>
+  <url>http://palava.cosmocode.de</url>
   <parent>
   	<artifactId>cosmocode-parent</artifactId>
   	<groupId>de.cosmocode</groupId>
   	<version>1.3</version>
   </parent>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>com.mycila.maven-license-plugin</groupId>
+        <artifactId>maven-license-plugin</artifactId>
+        <version>1.5.0</version>
+        <configuration>
+          <header>/header</header>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </configuration>
+        <executions>
+          <execution>
+            <phase>verify</phase>
+            <goals>
+              <goal>check</goal>
+            </goals>
+          </execution>
+        </executions>
+        <dependencies>
+          <dependency>
+            <groupId>de.cosmocode.palava</groupId>
+            <artifactId>palava-license</artifactId>
+            <version>1.0</version>
+          </dependency>
+        </dependencies>
+      </plugin>
+    </plugins>
+  </build>
 </project>
