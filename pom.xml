@@ -4,14 +4,17 @@
   <groupId>de.cosmocode.palava</groupId>
   <artifactId>palava-parent</artifactId>
   <packaging>pom</packaging>
-  <version>1.4-SNAPSHOT</version>
+  <version>2.0-SNAPSHOT</version>
   <name>Palava Parent</name>
   <url>http://palava.cosmocode.de</url>
   <parent>
-      <artifactId>cosmocode-parent</artifactId>
-      <groupId>de.cosmocode</groupId>
-      <version>1.3</version>
+    <artifactId>cosmocode-parent</artifactId>
+    <groupId>de.cosmocode</groupId>
+    <version>1.3</version>
   </parent>
+  <scm>
+    <developerConnection>scm:svn:http://palava.svn.cosmocode.de/palava-parent/trunk</developerConnection>
+  </scm>
   <build>
     <plugins>
       <plugin>
@@ -50,11 +53,11 @@
       </plugin>
     </plugins>
   </build>
-	<distributionManagement>
-		<site>
-			<id>palava-website</id>
-			<name>www.palava2.org</name>
-			<url>scp://server.onsteroids.org/export/www/www.palava2.org/htdocs/</url>
-		</site>
-	</distributionManagement>
+  <distributionManagement>
+    <site>
+      <id>palava-website</id>
+      <name>www.palava2.org</name>
+      <url>scp://server.onsteroids.org/export/www/www.palava2.org/htdocs/</url>
+    </site>
+  </distributionManagement>
 </project>
