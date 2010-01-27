@@ -50,4 +50,11 @@
       </plugin>
     </plugins>
   </build>
+	<distributionManagement>
+		<site>
+			<id>palava-website</id>
+			<name>www.palava2.org</name>
+			<url>scp://server.onsteroids.org/export/www/www.palava2.org/htdocs/</url>
+		</site>
+	</distributionManagement>
 </project>
