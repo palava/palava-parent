@@ -80,6 +80,7 @@
           <header>/header</header>
           <includes>
             <include>**/*.java</include>
+            <include>**/*.sh</include>
           </includes>
         </configuration>
         <executions>
