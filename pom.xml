@@ -64,7 +64,7 @@
   	</developer>
   </developers>
   <scm>
-    <developerConnection>scm:svn:http://palava.svn.cosmocode.de/palava-parent/trunk</developerConnection>
+    <developerConnection>scm:svn:https://palava.svn.cosmocode.de/palava-parent/trunk</developerConnection>
   </scm>
   <organization>
   	<name>CosmoCode GmbH</name>
