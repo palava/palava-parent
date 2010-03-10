@@ -79,6 +79,7 @@
           <header>/header</header>
           <includes>
             <include>**/*.java</include>
+            <include>**/*.aj</include>
             <include>**/*.sh</include>
           </includes>
         </configuration>
