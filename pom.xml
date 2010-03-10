@@ -22,7 +22,19 @@
   		<organizationUrl>http://www.cosmocode.de/</organizationUrl>
   		<timezone>+1</timezone>
   		<roles>
-  			<role>Developer</role>
+  			<role>Lead Developer</role>
+  		</roles>
+  	</developer>
+    <developer>
+  		<id>schoenborn</id>
+  		<name>Willi Schönborn</name>
+  		<email>schoenborn@cosmocode.de</email>
+  		<url>http://www.cosmocode.de/</url>
+  		<organization>CosmoCode GmbH</organization>
+  		<organizationUrl>http://www.cosmocode.de/</organizationUrl>
+  		<timezone>+1</timezone>
+  		<roles>
+  			<role>Lead Developer</role>
   		</roles>
   	</developer>
   	<developer>
@@ -47,18 +59,6 @@
   		<timezone>+1</timezone>
   		<roles>
   			<role>Designer</role>
-  		</roles>
-  	</developer>
-  	<developer>
-  		<id>schoenborn</id>
-  		<name>Willi Schönborn</name>
-  		<email>schoenborn@cosmocode.de</email>
-  		<url>http://www.cosmocode.de/</url>
-  		<organization>CosmoCode GmbH</organization>
-  		<organizationUrl>http://www.cosmocode.de/</organizationUrl>
-  		<timezone>+1</timezone>
-  		<roles>
-  			<role>Developer</role>
   		</roles>
   	</developer>
   </developers>
@@ -108,11 +108,4 @@
       </plugin>
     </plugins>
   </build>
-  <distributionManagement>
-    <site>
-      <id>palava-website</id>
-      <name>www.palava2.org</name>
-      <url>scp://server.onsteroids.org/export/www/www.palava2.org/htdocs/</url>
-    </site>
-  </distributionManagement>
 </project>
