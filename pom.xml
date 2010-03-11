@@ -12,56 +12,6 @@
     <groupId>de.cosmocode</groupId>
     <version>1.5.2</version>
   </parent>
-  <developers>
-    <developer>
-      <id>sarnowski</id>
-      <name>Tobias Sarnowski</name>
-      <email>sarnowski@cosmocode.de</email>
-      <url>http://www.cosmocode.de/</url>
-      <organization>CosmoCode GmbH</organization>
-      <organizationUrl>http://www.cosmocode.de/</organizationUrl>
-      <timezone>+1</timezone>
-      <roles>
-        <role>Lead Developer</role>
-      </roles>
-    </developer>
-    <developer>
-      <id>schoenborn</id>
-      <name>Willi Schönborn</name>
-      <email>schoenborn@cosmocode.de</email>
-      <url>http://www.cosmocode.de/</url>
-      <organization>CosmoCode GmbH</organization>
-      <organizationUrl>http://www.cosmocode.de/</organizationUrl>
-      <timezone>+1</timezone>
-      <roles>
-        <role>Lead Developer</role>
-      </roles>
-    </developer>
-    <developer>
-      <id>lorenz</id>
-      <name>Oliver Lorenz</name>
-      <email>olorenz@cosmocode.de</email>
-      <url>http://www.cosmocode.de/</url>
-      <organization>CosmoCode GmbH</organization>
-      <organizationUrl>http://www.cosmocode.de/</organizationUrl>
-      <timezone>+1</timezone>
-      <roles>
-        <role>Developer</role>
-      </roles>
-    </developer>
-    <developer>
-      <id>ortiz</id>
-      <name>Jesús Ortiz</name>
-      <email>ortiz@cosmocode.ed</email>
-      <url>http://www.cosmocode.de/</url>
-      <organization>CosmoCode GmbH</organization>
-      <organizationUrl>http://www.cosmocode.de/</organizationUrl>
-      <timezone>+1</timezone>
-      <roles>
-        <role>Designer</role>
-      </roles>
-    </developer>
-  </developers>
   <scm>
     <developerConnection>scm:svn:https://palava.svn.cosmocode.de/palava-parent/trunk</developerConnection>
   </scm>
@@ -69,6 +19,12 @@
     <name>CosmoCode GmbH</name>
     <url>http://www.cosmocode.de</url>
   </organization>
+	<licenses>
+		<license>
+			<name>GPL version 2</name>
+			<url>../../palava-license/trunk/src/main/resources/header</url>
+		</license>
+	</licenses>
   <build>
     <plugins>
       <plugin>
@@ -138,4 +94,37 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
+	<reporting>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-project-info-reports-plugin</artifactId>
+				<version>2.1.2</version>
+					<reportSets>
+						<reportSet>
+							<reports>
+								<report>index</report> <!-- for everyone who is too lazy to build an own index -->
+								<report>project-team</report>
+								<report>license</report>
+								<report>scm</report>
+								<report>dependencies</report>
+								<report>plugins</report>
+								<report>summary</report>
+							</reports>
+						</reportSet>
+					</reportSets>
+					<configuration>
+						<dependencyLocationsEnabled>false</dependencyLocationsEnabled> 
+					</configuration>
+			</plugin>
+		</plugins>
+	</reporting>
+	<distributionManagement>
+		<site>
+			<id>palava-website</id>
+			<name>www.palava2.org</name>
+			<url>scp://www.palava2.org:6589/var/www/palava2/</url>
+		</site>
+	</distributionManagement>
+
 </project>
