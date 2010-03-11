@@ -1,26 +1,26 @@
 <project name="palava">
-	<bannerLeft>
-		<name>palava</name>
-		<src>http://www.palava2.org/images/palava2.png</src>
-		<href>http://www.palava2.org/</href>
-	</bannerLeft>
-	<bannerRight>
-		<name>CosmoCode GmbH</name>
-		<src>http://www.cosmocode.de/lib/tpl/cc/images/logo_cosmocode.png</src>
-		<href>http://www.cosmocode.de/</href>
-	</bannerRight>
+    <bannerLeft>
+        <name>palava</name>
+        <src>http://www.palava2.org/images/palava2.png</src>
+        <href>http://www.palava2.org/</href>
+    </bannerLeft>
+    <bannerRight>
+        <name>CosmoCode GmbH</name>
+        <src>http://www.cosmocode.de/lib/tpl/cc/images/logo_cosmocode.png</src>
+        <href>http://www.cosmocode.de/</href>
+    </bannerRight>
 
-	<skin>
-		<groupId>de.cosmocode</groupId>
-		<artifactId>cosmocode-skin</artifactId>
-		<version>1.1-SNAPSHOT</version>
-	</skin>
+    <skin>
+        <groupId>de.cosmocode</groupId>
+        <artifactId>cosmocode-skin</artifactId>
+        <version>1.1-SNAPSHOT</version>
+    </skin>
 
-	<body>
-		<menu name="Documentation">
-			<item name="Back to Overview" href=".."/>
-		</menu>
+    <body>
+        <menu name="Documentation">
+            <item name="Back to Overview" href=".."/>
+        </menu>
 
-		<menu name="Reports" ref="reports"/>
-	</body>
+        <menu name="Reports" ref="reports"/>
+    </body>
 </project>
