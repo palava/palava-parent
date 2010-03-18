@@ -45,7 +45,7 @@
                 <artifactId>maven-license-plugin</artifactId>
                 <version>1.5.0</version>
                 <configuration>
-                    <header>/header</header>
+                    <header>/PALAVA_LICENSE.txt</header>
                     <includes>
                         <include>**/*.java</include>
                         <include>**/*.aj</include>
@@ -72,7 +72,7 @@
                     <dependency>
                         <groupId>de.cosmocode.palava</groupId>
                         <artifactId>palava-license</artifactId>
-                        <version>2.0.1</version>
+                        <version>2.0.2</version>
                     </dependency>
                 </dependencies>
             </plugin>
