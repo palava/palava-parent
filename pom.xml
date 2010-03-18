@@ -25,6 +25,19 @@
             <url>../../palava-license/trunk/src/main/resources/header</url>
         </license>
     </licenses>
+    <pluginRepositories>
+      <pluginRepository>
+        <id>mc-release</id>
+        <name>Local Maven repository of releases</name>
+        <url>http://mc-repo.googlecode.com/svn/maven2/releases</url>
+        <snapshots>
+            <enabled>false</enabled>
+        </snapshots>
+        <releases>
+            <enabled>true</enabled>
+        </releases>
+      </pluginRepository>
+    </pluginRepositories>
     <build>
         <plugins>
             <plugin>
@@ -142,5 +155,4 @@
             <url>scp://www.palava2.org:6589/var/www/palava2/</url>
         </site>
     </distributionManagement>
-
 </project>
