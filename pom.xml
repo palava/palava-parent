@@ -3,17 +3,17 @@
     <groupId>de.cosmocode.palava</groupId>
     <artifactId>palava-parent</artifactId>
     <packaging>pom</packaging>
-    <version>2.1-SNAPSHOT</version>
+    <version>2.0.7</version>
     <name>Palava Parent</name>
     <description>Palava is a java framework with an integrated php bridge to rapidly develop fast, scalable and robust web solutions.</description>
     <url>http://www.palava2.org</url>
     <parent>
         <artifactId>cosmocode-parent</artifactId>
         <groupId>de.cosmocode</groupId>
-        <version>1.5.2</version>
+        <version>2.0.1</version>
     </parent>
     <scm>
-        <developerConnection>scm:svn:https://palava.svn.cosmocode.de/palava-parent/trunk</developerConnection>
+        <developerConnection>scm:svn:https://palava.svn.cosmocode.de/palava-parent/tags/2.0.7</developerConnection>
     </scm>
     <organization>
         <name>CosmoCode GmbH</name>
@@ -22,28 +22,15 @@
     <licenses>
         <license>
             <name>GPL version 2</name>
-            <url>../../palava-license/trunk/src/main/resources/header</url>
+            <url>../../palava-license/trunk/src/main/resources/PALAVA_LICENSE.txt</url>
         </license>
     </licenses>
-    <pluginRepositories>
-      <pluginRepository>
-        <id>mc-release</id>
-        <name>Local Maven repository of releases</name>
-        <url>http://mc-repo.googlecode.com/svn/maven2/releases</url>
-        <snapshots>
-            <enabled>false</enabled>
-        </snapshots>
-        <releases>
-            <enabled>true</enabled>
-        </releases>
-      </pluginRepository>
-    </pluginRepositories>
     <build>
         <plugins>
             <plugin>
                 <groupId>com.mycila.maven-license-plugin</groupId>
                 <artifactId>maven-license-plugin</artifactId>
-                <version>1.5.0</version>
+                <version>1.5.1</version>
                 <configuration>
                     <header>/PALAVA_LICENSE.txt</header>
                     <includes>
@@ -72,7 +59,7 @@
                     <dependency>
                         <groupId>de.cosmocode.palava</groupId>
                         <artifactId>palava-license</artifactId>
-                        <version>2.0.2</version>
+                        <version>2.0.3</version>
                     </dependency>
                 </dependencies>
             </plugin>
@@ -108,7 +95,7 @@
             <dependency>
                 <groupId>de.cosmocode</groupId>
                 <artifactId>cosmocode-junit</artifactId>
-                <version>1.1.3</version>
+                <version>1.2</version>
                 <scope>test</scope>
             </dependency>
             <dependency>
@@ -119,7 +106,7 @@
             <dependency>
                 <groupId>de.cosmocode</groupId>
                 <artifactId>cosmocode-commons</artifactId>
-                <version>1.3.0</version>
+                <version>1.3.1</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
