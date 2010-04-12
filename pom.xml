@@ -73,6 +73,12 @@
                     <configuration>
                         <source>1.6</source>
                         <target>1.6</target>
+                        <weaveDependencies>
+                            <weaveDependency>
+                                <groupId>de.cosmocode.palava</groupId>
+                                <artifactId>palava-core</artifactId>
+                            </weaveDependency>
+                        </weaveDependencies>
                     </configuration>
                     <dependencies>
                         <dependency>
