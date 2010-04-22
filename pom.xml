@@ -1,69 +1,28 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>de.cosmocode.palava</groupId>
-    <artifactId>palava-parent</artifactId>
-    <packaging>pom</packaging>
-    <version>2.2-SNAPSHOT</version>
-    <name>Palava Parent</name>
-    <description>Palava is a java framework with an integrated php bridge to rapidly develop fast, scalable and robust web solutions.</description>
-    <url>http://www.palava2.org</url>
+
     <parent>
         <artifactId>cosmocode-parent</artifactId>
         <groupId>de.cosmocode</groupId>
-        <version>2.0.2</version>
+        <version>2.2.0</version>
     </parent>
+
+    <name>Palava Parent</name>
+
+    <groupId>de.cosmocode.palava</groupId>
+    <artifactId>palava-parent</artifactId>
+    <version>2.2-SNAPSHOT</version>
+
+    <packaging>pom</packaging>
+
+    <description>Palava is a java framework with an integrated php bridge to rapidly develop fast, scalable and robust web solutions.</description>
+    <url>http://www.palava2.org</url>
+
     <scm>
         <developerConnection>scm:svn:https://palava.svn.cosmocode.de/palava-parent/trunk</developerConnection>
     </scm>
-    <organization>
-        <name>CosmoCode GmbH</name>
-        <url>http://www.cosmocode.de</url>
-    </organization>
-    <licenses>
-        <license>
-            <name>GPL version 2</name>
-            <url>../../palava-license/trunk/src/main/resources/PALAVA_LICENSE.txt</url>
-        </license>
-    </licenses>
+
     <build>
-        <plugins>
-            <plugin>
-                <groupId>com.mycila.maven-license-plugin</groupId>
-                <artifactId>maven-license-plugin</artifactId>
-                <version>1.5.1</version>
-                <configuration>
-                    <header>/PALAVA_LICENSE.txt</header>
-                    <includes>
-                        <include>**/*.java</include>
-                        <include>**/*.aj</include>
-                        <include>**/*.sh</include>
-                    </includes>
-                </configuration>
-                <executions>
-                    <execution>
-                        <id>format</id>
-                        <phase>generate-sources</phase>
-                        <goals>
-                            <goal>format</goal>
-                        </goals>
-                    </execution>
-                    <execution>
-                        <id>check</id>
-                        <phase>verify</phase>
-                        <goals>
-                            <goal>check</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <dependencies>
-                    <dependency>
-                        <groupId>de.cosmocode.palava</groupId>
-                        <artifactId>palava-license</artifactId>
-                        <version>[2,3)</version>
-                    </dependency>
-                </dependencies>
-            </plugin>
-        </plugins>
         <pluginManagement>
             <plugins>
                 <plugin>
@@ -73,12 +32,6 @@
                     <configuration>
                         <source>1.6</source>
                         <target>1.6</target>
-                        <weaveDependencies>
-                            <weaveDependency>
-                                <groupId>de.cosmocode.palava</groupId>
-                                <artifactId>palava-core</artifactId>
-                            </weaveDependency>
-                        </weaveDependencies>
                     </configuration>
                     <dependencies>
                         <dependency>
@@ -91,6 +44,7 @@
             </plugins>
         </pluginManagement>
     </build>
+
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -105,6 +59,7 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
     <reporting>
         <plugins>
             <plugin>
@@ -114,13 +69,6 @@
                 <reportSets>
                     <reportSet>
                         <reports>
-                            <report>index</report> <!-- for everyone who is too lazy to build an own index -->
-                            <report>project-team</report>
-                            <report>license</report>
-                            <report>scm</report>
-                            <report>dependencies</report>
-                            <report>plugins</report>
-                            <report>summary</report>
                         </reports>
                     </reportSet>
                 </reportSets>
@@ -130,11 +78,12 @@
             </plugin>
         </plugins>
     </reporting>
+
     <distributionManagement>
         <site>
             <id>palava-website</id>
             <name>www.palava2.org</name>
-            <url>scp://www.palava2.org:6589/var/www/palava2/</url>
+            <url>scpexe://www.palava2.org:6589/var/www/palava2/</url>
         </site>
     </distributionManagement>
 </project>
