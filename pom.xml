@@ -18,11 +18,26 @@
     <description>Palava is a java framework with an integrated php bridge to rapidly develop fast, scalable and robust web solutions.</description>
     <url>http://www.palava2.org</url>
 
+    <organization>
+        <name>CosmoCode GmbH</name>
+        <url>http://www.cosmocode.de/</url>
+    </organization>
+
     <scm>
         <developerConnection>scm:svn:https://palava.svn.cosmocode.de/palava-parent/trunk</developerConnection>
     </scm>
 
     <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-site-plugin</artifactId>
+                <version>2.1</version>
+                <configuration>
+                    <generateReports>false</generateReports>
+                </configuration>
+            </plugin>
+        </plugins>
         <pluginManagement>
             <plugins>
                 <plugin>
@@ -59,25 +74,6 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
-    <reporting>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-project-info-reports-plugin</artifactId>
-                <version>2.1.2</version>
-                <reportSets>
-                    <reportSet>
-                        <reports>
-                        </reports>
-                    </reportSet>
-                </reportSets>
-                <configuration>
-                    <dependencyLocationsEnabled>false</dependencyLocationsEnabled>
-                </configuration>
-            </plugin>
-        </plugins>
-    </reporting>
 
     <distributionManagement>
         <site>
