@@ -1,5 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <artifactId>cosmocode-parent</artifactId>
@@ -9,12 +8,12 @@
   <name>Palava Parent</name>
   <groupId>de.cosmocode.palava</groupId>
   <artifactId>palava-parent</artifactId>
-  <version>2.4-SNAPSHOT</version>
+  <version>2.3.3</version>
   <packaging>pom</packaging>
   <description>Palava is a java framework with an integrated php bridge to rapidly develop fast, scalable and robust web solutions.</description>
   <url>http://www.palava2.org</url>
   <scm>
-    <developerConnection>scm:svn:https://palava.svn.cosmocode.de/palava-parent/trunk</developerConnection>
+    <developerConnection>scm:svn:https://palava.svn.cosmocode.de/palava-parent/tags/2.3.3</developerConnection>
   </scm>
   <repositories>
     <repository>
