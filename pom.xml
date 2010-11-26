@@ -13,7 +13,7 @@
   <description>Palava is a java framework with an integrated php bridge to rapidly develop fast, scalable and robust web solutions.</description>
   <url>http://www.palava2.org</url>
   <scm>
-    <developerConnection>scm:svn:https://palava.svn.cosmocode.de/palava-parent/trunk</developerConnection>
+    <developerConnection>scm:git:git@github.com:palava/${project.artifactId}.git</developerConnection>
   </scm>
   <repositories>
     <repository>
