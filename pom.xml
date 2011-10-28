@@ -60,14 +60,6 @@
           </execution>
         </executions>
       </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-site-plugin</artifactId>
-        <version>2.1</version>
-        <configuration>
-          <generateReports>false</generateReports>
-        </configuration>
-      </plugin>
     </plugins>
     <pluginManagement>
       <plugins>
@@ -111,11 +103,4 @@
       <version>1.0</version>
     </dependency>
   </dependencies>
-  <distributionManagement>
-    <site>
-      <id>palava-website</id>
-      <name>www.palava2.org</name>
-      <url>scpexe://www.palava2.org:6589/var/www/palava2/</url>
-    </site>
-  </distributionManagement>
 </project>
